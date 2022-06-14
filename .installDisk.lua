@@ -1,0 +1,7 @@
+term.clear()
+print('instalation')
+os.run("mkdir /.users/")
+os.run('mkdir /.documents/')
+os.run('copy .os/ /.os/')
+print('Install os complete')
+os.reboot()

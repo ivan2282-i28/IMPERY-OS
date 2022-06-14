@@ -1,0 +1,10 @@
+term.clear()
+os.pullEvent = os.pullEventRaw
+term.setCursorPos(1,1)
+print('IMPERY OS')
+print('load')
+term.setCursorPos(3,13)
+sleep(2)
+textutils.slowPrint("######################################")
+sleep(1)
+shell.run("/.os/menu.lua")
