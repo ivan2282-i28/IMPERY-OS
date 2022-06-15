@@ -13,7 +13,7 @@ local function drawmenu()
    term.clear()
    term.setCursorPos(2,2)
    term.write("INSTALL IMPERY OS")
-   term.setCursorPos(1,11)
+   term.setCursorPos(11,1)
    if noption == 1 then
        term.write("Programs")
    elseif noption == 2 then
