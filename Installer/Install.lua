@@ -60,5 +60,6 @@ end
 term.clear()
 if noption == 1 then
     print("the function added on update")
-if noption == 2 then
+elseif noption == 2 then
     shell.run('wget run https://raw.githubusercontent.com/ivan2282ofiical/IMPERY-OS/main/Installer/Install.lua')
+end
