@@ -2,7 +2,7 @@ term.clear()
 os.pullEvent = os.pullEventRaw
 local w,h = term.getSize()
 
-function printc (y.s)
+function printc(y,s)
     local x = math.floor((w - string.len(s)) /2)
     term.setCursorBlink(x,y)
     term.clear()
