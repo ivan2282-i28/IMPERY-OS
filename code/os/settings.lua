@@ -15,7 +15,7 @@ local function drawmenu()
    term.write("IMPERY OS")
    term.setCursorPos(w-11.1)
    if noption == 1 then
-       term.write("User")
+       term.write("Comig soon")
    elseif noption == 2 then
        term.write("adedd on uptdate")
    elseif noption == 3 then
@@ -62,7 +62,7 @@ while true do
 end
 term.clear()
 if noption == 1 then
-    shell.run('/.os/settings/user.lua')
+    shell.run('/.os/settings.lua')
 if noption == 2 then
     shell.run('/.os/settings.lua')
 if noption == 3 then
