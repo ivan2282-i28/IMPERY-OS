@@ -26,12 +26,12 @@ end
 --gui
 term.clear()
 local function drawFronted()
-   printCentered(math.floor(h/2) - 3, "")
-   printCentered(math.floor(h/2) - 2, "Start Menu")
-   printCentered(math.floor(h/2) - 1, "")
-   printCentered(math.floor(h/2) + 0, ((noption == 1 and " [ Create disk installer  ] ") or "Created disk installer"))
-   printCentered(math.floor(h/2) + 1, ((noption == 2 and " [ Install ] ") or "Install"))  
-   printCentered(math.floor(h/2) + 2, ((noption == 3 and " [  Shell  ] ") or "Shell"))  
+   print(math.floor(h/2) - 3, "")
+   print(math.floor(h/2) - 2, "Start Menu")
+   print(math.floor(h/2) - 1, "")
+   print(math.floor(h/2) + 0, ((noption == 1 and " [ Create disk installer  ] ") or "Created disk installer"))
+   print(math.floor(h/2) + 1, ((noption == 2 and " [ Install ] ") or "Install"))  
+   print(math.floor(h/2) + 2, ((noption == 3 and " [  Shell  ] ") or "Shell"))  
 end 
 --displays
 drawmenu()
