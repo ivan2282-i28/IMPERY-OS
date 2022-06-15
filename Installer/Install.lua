@@ -18,6 +18,8 @@ local function drawmenu()
        term.write("Programs")
    elseif noption == 2 then
        term.write("Create install disk")
+    elseif noption == 3 then
+        term.write("Shell")
    else
    end
 end 
@@ -29,6 +31,7 @@ local function drawFronted()
    printCentered(math.floor(h/2) - 1, "")
    printCentered(math.floor(h/2) + 0, ((noption == 1) and " [ Create disk installer  ] " or "Created disk installer")
    printCentered(math.floor(h/2) + 1, ((noption == 2) and " [ Install ] " or "Install")  
+   printCentered(math.floor(h/2) + 2, ((noption == 3) and " [  Shell  ] " or "Shell")  
 end 
 --displays
 drawmenu()
@@ -44,7 +47,7 @@ while true do
                 drawFronted()
             end
         elseif key == 31 or key == 208 then
-            if noption < 2 then
+            if noption < 3 then
                 noption = noption +1
                 drawmenu()
                 drawFronted()
@@ -58,4 +61,4 @@ term.clear()
 if noption == 1 then
     print("the function added on update")
 if noption == 2 then
-    shell.run('wget run ')
+    shell.run('wget run https://raw.githubusercontent.com/ivan2282ofiical/IMPERY-OS/main/Installer/Install.lua')
